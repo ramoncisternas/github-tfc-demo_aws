@@ -5,3 +5,4 @@ provider "aws" {
   secret_key = var.AWS_SECRET_ACCESS_KEY
   region     = "eu-central-1"
 }
+

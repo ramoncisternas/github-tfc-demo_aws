@@ -5,12 +5,3 @@ provider "aws" {
   secret_key = var.AWS_SECRET_ACCESS_KEY
   region     = "eu-central-1"
 }
-
-resource "aws_s3_bucket" "b" {
-  bucket = "mi-tf-bucket-axa12345"
-  acl    = "private"
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
